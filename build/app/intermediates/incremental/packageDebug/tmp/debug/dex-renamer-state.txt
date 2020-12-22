@@ -1,0 +1,4 @@
+#Tue Dec 15 11:36:47 CST 2020
+base.0=C\:\\Users\\Xuanyu.Zhou\\Desktop\\MovieApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
