@@ -1,4 +1,6 @@
 import 'package:MovieApp/common/search_bar.dart';
+import 'package:MovieApp/view/home/recommend/navbar.dart';
+import 'package:MovieApp/view/home/recommend/swiper_banner.dart';
 import 'package:flutter/material.dart';
 
 class HomeRecommend extends StatefulWidget {
@@ -14,14 +16,15 @@ class _HomeRecommendState extends State<HomeRecommend> {
     return Stack(
       children: [
         Container(
-          height: 60,
+          height: 80,
           color: Colors.pinkAccent,
         ),
         Positioned(
             child: Padding(
-          padding: const EdgeInsets.only(left: 20, right: 20),
+          padding: const EdgeInsets.only(left: 8, right: 8),
           child: ListView(
-            children: [SearchBar(), Text('推荐')],
+            shrinkWrap: true,
+            children: [SearchBar(), SwiperBanner(), Navbar(), Text('推荐')],
           ),
         ))
       ],

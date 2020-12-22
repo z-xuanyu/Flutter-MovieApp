@@ -11,12 +11,12 @@ class _SearchBarState extends State<SearchBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
+      height: 35,
       margin: const EdgeInsets.only(top: 5),
       child: TextField(
         textAlign: TextAlign.center,
         textAlignVertical: TextAlignVertical.center,
-        style: TextStyle(fontSize: 16),
+        style: TextStyle(fontSize: 14),
         cursorWidth: 3.0,
         decoration: InputDecoration(
             hintText: '输入搜索关键词',
