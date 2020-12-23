@@ -5,10 +5,12 @@ class HomeHanju extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      color: Colors.pinkAccent,
-      child: Text('韩剧'),
-    );
+    return ListView.builder(
+        itemCount: 100,
+        itemExtent: 50.0, //强制高度为50.0
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile(title: Text("$index"));
+        });
+    ;
   }
 }

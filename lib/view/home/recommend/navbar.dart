@@ -7,6 +7,7 @@ class Navbar extends StatelessWidget {
       crossAxisCount: 5,
       childAspectRatio: 1.0,
       shrinkWrap: true,
+      primary: true,
       children: [
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
