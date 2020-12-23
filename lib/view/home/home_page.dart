@@ -1,5 +1,6 @@
 import 'package:MovieApp/view/home/home_hanju.dart';
 import 'package:MovieApp/view/home/home_recommend.dart';
+import 'package:MovieApp/view/home/home_star.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -37,13 +38,7 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           body: TabBarView(
-            children: [
-              Center(
-                child: Text('明星'),
-              ),
-              HomeRecommend(),
-              HomeHanju()
-            ],
+            children: [HomeStar(), HomeRecommend(), HomeHanju()],
           ),
         ));
   }
