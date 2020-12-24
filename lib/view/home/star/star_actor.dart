@@ -12,7 +12,7 @@ class _StarActorState extends State<StarActor> {
       decoration: BoxDecoration(
           border:
               Border(bottom: BorderSide(width: 1, color: Colors.grey[200]))),
-      height: 100,
+      height: 110,
       child: ListView.builder(
           shrinkWrap: true,
           itemCount: 10,
