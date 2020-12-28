@@ -13,10 +13,18 @@ class NavigatorTab extends StatefulWidget {
 class _NavigatorTabState extends State<NavigatorTab> {
   int _currentIndex = 0; // 默认选中tab
   final PageController _controller = PageController(initialPage: 0);
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
+        physics: NeverScrollableScrollPhysics(),
         controller: _controller,
         children: <Widget>[HomePage(), VideoPage(), UserPage()],
         onPageChanged: (index) {
