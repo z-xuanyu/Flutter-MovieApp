@@ -1,3 +1,4 @@
+import 'package:MovieApp/common/video_card.dart';
 import 'package:flutter/material.dart';
 
 class VideoFollow extends StatefulWidget {
@@ -120,9 +121,11 @@ class _VideoFollowState extends State<VideoFollow> {
                 style: TextStyle(color: Theme.of(context).primaryColor),
               )
             ],
-          )
+          ),
+          // 视频卡片
+          VideoCard()
         ],
-      )
+      ),
     ]);
   }
 }
